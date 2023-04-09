@@ -6,9 +6,12 @@ const router = useRouter()
 <template>
   <div>
     <div i-carbon-pedestrian text-4xl inline-block />
+    <div i-fluent-emoji:call-me-hand text-4xl inline-block />
+    <div i-fluent-emoji-call-me-hand text-4xl inline-block />
     <p>
-      Hi, {{ props.name }}
+      Fuck you, {{ props.name }}!
     </p>
+
     <p text-sm op50>
       <em>Dynamic route!</em>
     </p>
