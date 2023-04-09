@@ -1,4 +1,6 @@
 /// <reference types="vitest" />
+/// <reference types="vite/client" />
+/// <reference types="vite-plugin-pages/client" />
 
 import path from 'node:path'
 import { defineConfig } from 'vite'
@@ -8,6 +10,7 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import UnoCSS from 'unocss/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
+import { presetAttributify, presetIcons, presetUno } from 'unocss'
 
 export default defineConfig({
   resolve: {
@@ -49,7 +52,19 @@ export default defineConfig({
 
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
-    UnoCSS(),
+    UnoCSS({
+      shortcuts: {
+        'border-base': 'border-gray/20 dark:border-gray/15',
+        'bg-base': 'bg-white dark:bg-[#1a1a1a]',
+        'bg-canvas': 'bg-gray:15 dark:bg-[#111]',
+        'icon-btn': 'op30 hover:op100',
+      },
+      presets: [
+        presetUno(),
+        presetAttributify(),
+        presetIcons(),
+      ],
+    }),
   ],
 
   // https://github.com/vitest-dev/vitest

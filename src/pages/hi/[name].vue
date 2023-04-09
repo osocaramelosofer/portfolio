@@ -5,13 +5,15 @@ const router = useRouter()
 
 <template>
   <div>
+    <span />
+
     <div i-carbon-pedestrian text-4xl inline-block />
     <div i-fluent-emoji:call-me-hand text-4xl inline-block />
-    <div i-fluent-emoji-call-me-hand text-4xl inline-block />
     <p>
       Fuck you, {{ props.name }}!
     </p>
-
+    <div i-fluent-emoji:broccoli text-5xl />
+    <TheTest />
     <p text-sm op50>
       <em>Dynamic route!</em>
     </p>
