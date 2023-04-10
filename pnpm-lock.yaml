@@ -4,6 +4,9 @@ dependencies:
   '@vueuse/core':
     specifier: ^9.13.0
     version: 9.13.0(vue@3.2.47)
+  timezones.json:
+    specifier: ^1.7.0
+    version: 1.7.0
   vue:
     specifier: ^3.2.47
     version: 3.2.47
@@ -39,6 +42,9 @@ devDependencies:
   eslint:
     specifier: ^8.37.0
     version: 8.37.0
+  fuse.js:
+    specifier: ^6.6.2
+    version: 6.6.2
   jsdom:
     specifier: ^21.1.1
     version: 21.1.1
@@ -3053,6 +3059,11 @@ packages:
     resolution: {integrity: sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==}
     dev: true
 
+  /fuse.js@6.6.2:
+    resolution: {integrity: sha512-cJaJkxCCxC8qIIcPBF9yGxY0W/tVZS3uEISDxhYIdtk8OL93pe+6Zj7LjCqVV4dzbqcriOZ+kQ/NE4RXZHsIGA==}
+    engines: {node: '>=10'}
+    dev: true
+
   /gauge@4.0.4:
     resolution: {integrity: sha512-f9m+BEN5jkg6a0fZjleidjN51VE1X+mPFQ2DJ0uv1V39oCLCbsGe6yjbBnp7eK7z/+GAon99a3nHuqbuuthyPg==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
@@ -5234,6 +5245,10 @@ packages:
   /through@2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
     dev: true
+
+  /timezones.json@1.7.0:
+    resolution: {integrity: sha512-qzreOP+2sNmx6S3Cys0pEyI6t4qX0VPb4oFYMePUrYvQeBszGazzNpvWuAAGENGmpw7GoAND255NTkEQeXryvg==}
+    dev: false
 
   /tinybench@2.3.1:
     resolution: {integrity: sha512-hGYWYBMPr7p4g5IarQE7XhlyWveh1EKhy4wUBS1LrHXCKYgvz+4/jCqgmJqZxxldesn05vccrtME2RLLZNW7iA==}

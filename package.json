@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^9.13.0",
+    "timezones.json": "^1.7.0",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
@@ -26,6 +27,7 @@
     "@vue-macros/volar": "^0.9.5",
     "@vue/test-utils": "^2.3.2",
     "eslint": "^8.37.0",
+    "fuse.js": "^6.6.2",
     "jsdom": "^21.1.1",
     "lint-staged": "^13.2.0",
     "pnpm": "^8.1.1",

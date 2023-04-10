@@ -1,3 +1,7 @@
 {
-    "extends": "@antfu"
+    // "extends": "@antfu"
+
+    "extends": [
+        "@antfu/eslint-config"
+    ]
 }
