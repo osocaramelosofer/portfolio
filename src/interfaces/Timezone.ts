@@ -3,5 +3,5 @@ export interface Timezone {
   offset: number
   isdst: boolean
   abbr?: string
-  ttext: string
+  text: string
 }

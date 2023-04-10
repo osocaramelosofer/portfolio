@@ -9,11 +9,14 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    ActionBar: typeof import('./src/components/ActionBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheCounter: typeof import('./src/components/TheCounter.vue')['default']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
     TheInput: typeof import('./src/components/TheInput.vue')['default']
     TheTest: typeof import('./src/components/TheTest.vue')['default']
+    TimeSchedular: typeof import('./src/components/TimeSchedular.vue')['default']
+    TimezoneSearchBar: typeof import('./src/components/TimezoneSearchBar.vue')['default']
   }
 }
