@@ -5,8 +5,6 @@ const { timezone } = defineProps<{
 
 const state = computed(() => timezone.name.split('/')[0])
 const city = computed(() => timezone.name.split('/')[1])
-// const offset = computed(() => timezone.offset > 0 ? `+${offset}` : offset)
-// const offset = computed(()=>  timezone.offset > 0 ? `+${offset}` : offset)
 const offset = computed(() => timezone.offset > 0 ? `+${timezone.offset}` : timezone.offset)
 </script>
 
@@ -27,7 +25,3 @@ const offset = computed(() => timezone.offset > 0 ? `+${timezone.offset}` : time
     </div>
   </button>
 </template>
-
-<style lang="scss" scoped>
-
-</style>

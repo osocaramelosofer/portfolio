@@ -21,12 +21,15 @@ function add(t: Timezone) {
 function onKeyDown(e: KeyboardEvent) {
   if (e.key === 'ArrowDown')
     index.value = (index.value + 1) % searchResult.value.length
-
   else if (e.key === 'ArrowUp')
     index.value = (index.value - 1 + searchResult.value.length) % searchResult.value.length
-
   else if (e.key === 'Enter')
     add(searchResult.value[index.value])
+  else if(e.key === 'Escape'){
+    input.value = ''
+    index.value = 0
+  }
+  //TODO: Make ctrl + k to start searching 
 }
 </script>
 
@@ -39,14 +42,17 @@ function onKeyDown(e: KeyboardEvent) {
       @keydown="onKeyDown"
     >
     <div
-      v-show="input" absolute top-full left-0 right-0
-      p1 border="~ base" bg-base max-h-50 overflow-auto
+      v-show="input" 
+      absolute top-full left-0 right-0 z-10
+      rounded shadow
+      border="~ base" bg-base max-h-50 overflow-auto
     >
       <button
-        v-for="i, idx of searchResult" :key="i.refIndex"
+        v-for="(i, idx) of searchResult" :key="i.refIndex"
+        px2
         flex gap-2 w-full
-        :class="idx === index ? 'dark:bg-neutral-800 bg-gray-2' : ''"
-        @click="add(i.item)"
+        :class="idx === index ? 'dark:bg-neutral-800 bg-gray-1' : ''"
+        @click="add(i)"
       >
         <TimezoneItem :timezone="i.item" />
       </button>

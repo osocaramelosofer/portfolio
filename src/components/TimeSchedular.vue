@@ -1,9 +1,14 @@
 <script lang="ts" setup>
-import { zones } from '~/composables/state'
 </script>
 
 <template>
-  <div p2>
-    <pre>{{ zones }}</pre>
+  <div>
+    <div
+      v-for="zone, idx of zones"
+      :key="zone.name"
+      p="~ x3 y2" border="~ b base"
+    >
+      <TimezoneItem :timezone="zone" />
+    </div>
   </div>
 </template>
