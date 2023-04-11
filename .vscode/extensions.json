@@ -4,8 +4,27 @@
     "antfu.iconify",
     "antfu.unocss",
     "antfu.goto-alias",
-    "vue.volar",
     "dbaeumer.vscode-eslint",
-    "EditorConfig.EditorConfig"
+    "EditorConfig.EditorConfig",
+    "amodio.tsl-problem-matcher",
+
+    // my extensions, ofc :P
+    "antfu.browse-lite",
+    "antfu.slidev",
+    "antfu.where-am-i",
+    "lokalise.i18n-ally",
+
+    // themes & icons
+    "antfu.icons-carbon",
+    "antfu.theme-vitesse",
+    "file-icons.file-icons",
+    "sainnhe.gruvbox-material",
+
+    // life savers!
+    "dbaeumer.vscode-eslint",
+    "Vue.volar",
+    "GitHub.copilot",
+    "usernamehw.errorlens",
+    "streetsidesoftware.code-spell-checker"
   ]
 }

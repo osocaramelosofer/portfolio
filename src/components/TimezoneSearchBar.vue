@@ -24,7 +24,8 @@ function add(t: Timezone) {
   <div relative>
     <input
       v-model="input" type="text" text-black placeholder="Search timezone..."
-      px2 py1 rounded="~ gray/15" text-slate-50 w-full
+      p="x3 y2" border="~ base rounded" focus:border-neutral-500
+      dark:text-slate-50 w-full bg-transparent
     >
     <div
       v-show="input" absolute bg-gray-900 left-0 right-0
@@ -45,3 +46,9 @@ function add(t: Timezone) {
     </div>
   </div>
 </template>
+
+<style scoped>
+*:focus {
+    outline: none;
+}
+</style>

@@ -55,9 +55,9 @@ export default defineConfig({
     // see unocss.config.ts for config
     UnoCSS({
       shortcuts: {
-        'border-base': 'border-gray/20 dark:border-gray/15',
+        'border-base': 'border-gray/30 dark:border-gray/15',
         'bg-base': 'bg-white dark:bg-[#1a1a1a]',
-        'bg-canvas': 'bg-gray:15 dark:bg-[#111]',
+        'bg-canvas': 'bg-gray:15 dark:bg-truGray-800',
         'icon-btn': 'op30 hover:op100',
       },
       presets: [

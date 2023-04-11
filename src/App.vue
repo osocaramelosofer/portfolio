@@ -2,8 +2,9 @@
 </script>
 
 <template>
-  <main>
-    <div border="~ gray/20 " m2>
+  <main text-sans bg-canvas h-screen>
+    <NavBar />
+    <div border="~ base rounded" shadow m2 bg-base>
       <ActionBar />
       <TimeSchedular />
     </div>
@@ -12,8 +13,9 @@
 
 <style>
 html.dark {
-  background: #222;
+  /* background: #222;
   color: white;
-  color-scheme: dark;
+  color-scheme: dark; */
+
 }
 </style>
