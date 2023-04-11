@@ -19,6 +19,7 @@ declare module '@vue/runtime-core' {
     TheInput: typeof import('./src/components/TheInput.vue')['default']
     TheTest: typeof import('./src/components/TheTest.vue')['default']
     TimeSchedular: typeof import('./src/components/TimeSchedular.vue')['default']
+    TimezoneItem: typeof import('./src/components/TimezoneItem.vue')['default']
     TimezoneSearchBar: typeof import('./src/components/TimezoneSearchBar.vue')['default']
   }
 }

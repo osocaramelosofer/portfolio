@@ -18,6 +18,16 @@ function add(t: Timezone) {
   input.value = ''
   index.value = 0
 }
+function onKeyDown(e: KeyboardEvent) {
+  if (e.key === 'ArrowDown')
+    index.value = (index.value + 1) % searchResult.value.length
+
+  else if (e.key === 'ArrowUp')
+    index.value = (index.value - 1 + searchResult.value.length) % searchResult.value.length
+
+  else if (e.key === 'Enter')
+    add(searchResult.value[index.value])
+}
 </script>
 
 <template>
@@ -26,22 +36,19 @@ function add(t: Timezone) {
       v-model="input" type="text" text-black placeholder="Search timezone..."
       p="x3 y2" border="~ base rounded" focus:border-neutral-500
       dark:text-slate-50 w-full bg-transparent
+      @keydown="onKeyDown"
     >
     <div
-      v-show="input" absolute bg-gray-900 left-0 right-0
-      top-full
+      v-show="input" absolute top-full left-0 right-0
+      p1 border="~ base" bg-base max-h-50 overflow-auto
     >
       <button
-        v-for="i of searchResult" :key="i.refIndex"
-        flex gap-2
+        v-for="i, idx of searchResult" :key="i.refIndex"
+        flex gap-2 w-full
+        :class="idx === index ? 'dark:bg-neutral-800 bg-gray-2' : ''"
         @click="add(i.item)"
       >
-        <div font-mono w-10 text-right>
-          {{ i.item.offset }}
-        </div>
-        <div>
-          {{ i.item.name }}
-        </div>
+        <TimezoneItem :timezone="i.item" />
       </button>
     </div>
   </div>
@@ -49,6 +56,6 @@ function add(t: Timezone) {
 
 <style scoped>
 *:focus {
-    outline: none;
+  outline: none;
 }
 </style>
