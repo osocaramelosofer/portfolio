@@ -24,6 +24,9 @@ devDependencies:
   '@iconify-json/fluent-emoji':
     specifier: latest
     version: 1.1.13
+  '@iconify-json/material-symbols':
+    specifier: latest
+    version: 1.1.37
   '@types/node':
     specifier: ^18.15.11
     version: 18.15.11
@@ -544,6 +547,12 @@ packages:
 
   /@iconify-json/fluent-emoji@1.1.13:
     resolution: {integrity: sha512-9tyClxWzrLwbfItv10/oUp3G7s5X+MUa0VN5P8nN2gmVg9Uy87HoZnDt3IRKNwbyqncXRr3p0VoWuv/Tg2jUCg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/material-symbols@1.1.37:
+    resolution: {integrity: sha512-2liNEMWpm7Bwj22EsJBEtiMW9o5RAgKZAjE4zq+qxMELSvyCg+fqFsyWwHi5PAgp4V3fdt8jfRb+m6AfF8mFig==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
