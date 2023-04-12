@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <main text-sans bg-canvas h-screen>
+  <main text-sans bg-canvas h-screen p-5>
     <NavBar />
     <div border="~ base rounded" shadow m2 bg-base>
       <ActionBar />
@@ -16,6 +16,5 @@ html.dark {
   /* background: #222;
   color: white;
   color-scheme: dark; */
-
 }
 </style>
