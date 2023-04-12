@@ -7,6 +7,8 @@ export function addToTimezones(timezone: Timezone) {
   zoneNames.value.push(timezone.item.name)
 }
 
+export const now = useNow({ interval: 30_000 })
+
 const userTimezone = new window.Intl.DateTimeFormat().resolvedOptions().timeZone
 
 if (!zones.value.length)
