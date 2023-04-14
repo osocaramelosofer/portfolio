@@ -52,6 +52,7 @@ declare global {
   const markRaw: typeof import('vue')['markRaw']
   const moveZone: typeof import('./src/composables/state')['moveZone']
   const nextTick: typeof import('vue')['nextTick']
+  const now: typeof import('./src/composables/state')['now']
   const onActivated: typeof import('vue')['onActivated']
   const onBeforeMount: typeof import('vue')['onBeforeMount']
   const onBeforeRouteLeave: typeof import('vue-router')['onBeforeRouteLeave']
@@ -342,6 +343,7 @@ declare module 'vue' {
     readonly markRaw: UnwrapRef<typeof import('vue')['markRaw']>
     readonly moveZone: UnwrapRef<typeof import('./src/composables/state')['moveZone']>
     readonly nextTick: UnwrapRef<typeof import('vue')['nextTick']>
+    readonly now: UnwrapRef<typeof import('./src/composables/state')['now']>
     readonly onActivated: UnwrapRef<typeof import('vue')['onActivated']>
     readonly onBeforeMount: UnwrapRef<typeof import('vue')['onBeforeMount']>
     readonly onBeforeRouteLeave: UnwrapRef<typeof import('vue-router')['onBeforeRouteLeave']>

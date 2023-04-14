@@ -26,7 +26,7 @@ devDependencies:
     version: 1.1.13
   '@iconify-json/material-symbols':
     specifier: latest
-    version: 1.1.37
+    version: 1.1.38
   '@types/node':
     specifier: ^18.15.11
     version: 18.15.11
@@ -42,6 +42,9 @@ devDependencies:
   '@vue/test-utils':
     specifier: ^2.3.2
     version: 2.3.2(vue@3.2.47)
+  date-fns:
+    specifier: ^2.29.3
+    version: 2.29.3
   eslint:
     specifier: ^8.37.0
     version: 8.37.0
@@ -551,8 +554,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify-json/material-symbols@1.1.37:
-    resolution: {integrity: sha512-2liNEMWpm7Bwj22EsJBEtiMW9o5RAgKZAjE4zq+qxMELSvyCg+fqFsyWwHi5PAgp4V3fdt8jfRb+m6AfF8mFig==}
+  /@iconify-json/material-symbols@1.1.38:
+    resolution: {integrity: sha512-UdObccUrFmUojceFazSURHLXReAEFIUOWdGXVnBB/GK+2jAkSpF06Oj6rRhElvRFqsug4GDSr/xQhM2xgadiGA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -2138,6 +2141,11 @@ packages:
       abab: 2.0.6
       whatwg-mimetype: 3.0.0
       whatwg-url: 12.0.1
+    dev: true
+
+  /date-fns@2.29.3:
+    resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
+    engines: {node: '>=0.11'}
     dev: true
 
   /de-indent@1.0.2:

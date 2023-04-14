@@ -2,9 +2,9 @@
 </script>
 
 <template>
-  <main text-sans bg-canvas h-screen p-5>
+  <main font-sans bg-canvas h-screen>
     <NavBar />
-    <div border="~ base rounded" shadow m2 bg-base>
+    <div border="~ base rounded" bg-base shadow mx8>
       <ActionBar />
       <TimeSchedular />
     </div>
